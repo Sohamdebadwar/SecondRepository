@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="background-color: pink;">
+	<center>
+		 <div style="border-color: black " >
+		<h2>Person Details</h2>
+		<h3>
+		<form action="PersonServlet" method="post" >
+			Name: <input type="text" name="name" required pattern="[A-Za-z ]{3,30}" title="Name must contain only letters and spaces (3–30 characters)" autocomplete="off"><br><br>
+
+			Age: <input type="number" name="age" min="1" title="age should be in between 1 to 100" required autocomplete="off"><br><br>
+Mobile: <input type="text" name="mobile" pattern="\d{10}" title="10 digit number" required autocomplete="off"><br><br>
+
+
+			Select Your Gender:<br>
+			<input type="radio" name="gender" value="male" required> Male
+			<input type="radio" name="gender" value="female" required> Female
+			<br><br>
+
+			<input type="submit" value="Click">
+		</form>
+		</h3>
+		</div>
+
+</body>
+</html>
