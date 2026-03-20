@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Login</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #eef2f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .login-box {
+        width: 400px;
+        background: #ffffff;
+        margin: 90px auto;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 90%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        width: 95%;
+        padding: 12px;
+        background: #0077ff;
+        color: white;
+        border: none;
+        font-size: 18px;
+        border-radius: 6px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #005bd1;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #0077ff;
+        font-size: 16px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Customer Login</h2>
+
+    <form action="customerlogin" method="post">
+        <input type="text" name="uname" placeholder="Enter Username">
+        <input type="password" name="pwd" placeholder="Enter Password">
+        <input type="submit" value="Login">
+    </form>
+
+    <a href="CustomerRegister.html">New Customer?</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+Webpage/
+ ├── CustomerLogin.html
+ ├── CustomerRegister.html
+ ├── CustomerHome.jsp
+ ├── ViewProduct.jsp
+ ├── BuyProduct.jsp
+ ├── OrderConfirmed.jsp
+ │
+ ├── com.pack3/
+ │     ├── DBConnection.java
+ │     ├── CustomerBean.java
+ │     ├── CustomerRegistrationServlet.java
+ │     ├── CustomerLoginServlet.java
+ │     ├── ViewCustomerProductsServlet.java
+ │     ├── BuyProductServlet.java
+ │     ├── UpdateProductServlet.java
+ │     │
+ │     ├── CustomerRegisterDAO.java
+ │     ├── CustomerLoginDAO.java
+ │     ├── ViewCustomerProductDAO.java
+ │     ├── BuyProductServletDAO.java
+ │     ├── UpdateProductServletDAO.java
+ │     ├── CustomerLogoutServlet.java
+
+
+SQL> select * from product1 order by pcode;
+
+PCODE                     PNAME                     PCOMPANY                  PPRICE                    PQTY
+------------------------- ------------------------- ------------------------- ------------------------- -------------------------
+101                       watch                     titan                     3500                      8
+102                       mobile                    samsung                   40000                     6
+103                       fan                       bajaj                     1750                      8
+104                       laptop                    dell                      70000                     10
+105                       neckband                  boult                     1250                      9
+106                       tab                       apple                     25000                     12
+
+6 rows selected.
+
+SQL> select * from Admin1;
+
+UNAME                     PWORD                     FNAME                     LNAME                     ADDR             MID			PHNO
+------------------------- ------------------------- ------------------------- ----------------- ------------------------- ---------------------------------
+admin                     nit                       soham                     debadwar                 hyd              soham@gmail.com		7058846069
+
+
+SQL> select * from customer1;
+
+UNAME                     PWORD                     FNAME                     LNAME                     ADDR                      MID				PHNO
+------------------------- ------------------------- ------------------------- ------------------------- ------------------------- ----------------------------------------------
+anurag                    2001                      anurag                    lala                      hyderabad                 anu@gmail.com			9721764060
+
+soham@123                 123                       soham                     debadwar                  hyd                       debadwarsoham@gmail.com	7058846069
