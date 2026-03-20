@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Ticket Booking Form</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e9f1f7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-container {
+        background-color: #fff;
+        max-width: 420px;
+        margin: 50px auto;
+        padding: 25px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #004a99;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .section {
+        margin-top: 15px;
+    }
+
+    .radio-group, .checkbox-group {
+        margin-top: 8px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+        font-weight: normal;
+        margin-right: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Train Ticket Booking Form</h2>
+
+        <form action="bookTicket" method="post">
+
+            <label for="pname">Passenger Name:</label>
+            <input type="text" id="pname" name="pname" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="phno">Phone Number:</label>
+            <input type="text" id="phno" name="phno" required>
+
+            <label for="train">Train Name:</label>
+            <input type="text" id="train" name="train" required>
+
+            <label for="nop">Number of Passengers:</label>
+            <input type="number" id="nop" name="nop" required>
+
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required>
+
+            <label for="dest">Destination:</label>
+            <input type="text" id="dest" name="dest" required>
+
+            <div class="section">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <label>Class Type:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="classType" value="general"> General</label>
+                    <label><input type="radio" name="classType" value="sleeper"> Sleeper</label>
+                    <label><input type="radio" name="classType" value="3rd ac"> 3rd AC</label>
+                    <label><input type="radio" name="classType" value="2nd ac"> 2nd AC</label>
+                    <label><input type="radio" name="classType" value="1st ac"> 1st AC</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <label>Seat Type:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="seatType" value="Upper"> Upper</label>
+                    <label><input type="radio" name="seatType" value="Middle"> Middle</label>
+                    <label><input type="radio" name="seatType" value="Lower"> Lower</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <label>Train Facilities:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="facilities" value="Blanket"> Blanket</label>
+                    <label><input type="checkbox" name="facilities" value="Food Veg"> Food Veg</label>
+                    <label><input type="checkbox" name="facilities" value="Food Non-Veg"> Food Non-Veg</label>
+                    <label><input type="checkbox" name="facilities" value="Tea"> Tea</label>
+                    <label><input type="checkbox" name="facilities" value="Snacks"> Snacks</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Book Ticket">
+        </form>
+    </div>
+</body>
+</html>
