@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Insert Data</title>
+</head>
+<body style="margin:0; height:100vh; display:flex; justify-content:center; align-items:center; background-color:#f2f2f2; font-family:Arial, sans-serif;">
+
+    <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); width:320px; text-align:center;">
+        <h2 style="margin-bottom:20px; color:#333;">Insert Data</h2>
+
+        <form action="insertDataServlet" method="post">
+            <label style="display:block; text-align:left; margin:10px 0 5px; font-weight:bold;">Person Name:</label>
+            <input type="text" name="ename" required autocapitalize="off"
+                   style="width:100%; padding:8px; border:1px solid #ccc; border-radius:5px; box-sizing:border-box;">
+
+            <label style="display:block; text-align:left; margin:10px 0 5px; font-weight:bold;">Person ID:</label>
+            <input type="number" name="eid" required autocapitalize="off"
+                   style="width:100%; padding:8px; border:1px solid #ccc; border-radius:5px; box-sizing:border-box;">
+
+            <label style="display:block; text-align:left; margin:10px 0 5px; font-weight:bold;">Person Aadhar Number:</label>
+            <input type="text" name="eaadhar" required pattern="\d{12}" autocapitalize="off"
+                   style="width:100%; padding:8px; border:1px solid #ccc; border-radius:5px; box-sizing:border-box;">
+
+            <input type="submit" value="Submit" 
+                   style="width:100%; background-color:#007BFF; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer; margin-top:15px; font-size:16px;"
+                   onmouseover="this.style.backgroundColor='#0056b3'" 
+                   onmouseout="this.style.backgroundColor='#007BFF'">
+        </form>
+    </div>
+
+</body>
+</html>
